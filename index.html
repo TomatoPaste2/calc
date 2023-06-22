@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/dark.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <title>حساب المعدل</title>
+    <style>
+    *{
+      box-sizing: border-box;
+      text-align: center;
+    }
+      input{
+        width: 90%;
+      }
+    </style>
+</head>
+<body dir="rtl">
+    <h1>حساب المعدل</h1><hr>
+    
+    <div>
+      <h3>التربية الاسلامية</h3>
+      <input type="number" required id="one" placeholder="علامة من ٤٠٠"><hr>
+      
+            <h3>العربي</h3>
+      <input type="number" required id="two" placeholder="علامة من ٦٠٠"><hr>
+      
+            <h3>الانجليزي</h3>
+      <input type="number" required id="three" placeholder="علامة من ٤٠٠"><hr>
+      
+      
+            <h3>الرياضيات</h3>
+      <input type="number" required id="four" placeholder="علامة من ٤٠٠"><hr>
+      
+      
+            <h3>الاجتماعيات</h3>
+      <input type="number" required id="five" placeholder="علامة من ٤٠٠"><hr>
+      
+      
+            <h3>العلوم</h3>
+      <input type="number" required id="six" placeholder="علامة من ٨٠٠"><hr>
+      
+      
+            <h3>المالية</h3>
+      <input type="number" required id="seven" placeholder="علامة من ٢٠٠"><hr>
+      
+      
+            <h3>مهني</h3>
+      <input type="number" required id="eight" placeholder="علامة من ٢٠٠"><hr>
+      
+      
+            <h3>الحاسوب</h3>
+      <input type="number" required id="nine" placeholder="علامة من ٢٠٠"><hr>
+      
+      <button id="submit">احسب معدلي</button>
+    </div>
+</body>
+<script>
+  let one = document.getElementById("one");
+  let two = document.getElementById("two");
+  let three = document.getElementById("three");
+  let four = document.getElementById("four");
+  let five = document.getElementById("five");
+  let six = document.getElementById("six");
+  let seven = document.getElementById("seven");
+  let eight = document.getElementById("eight");
+  let nine = document.getElementById("nine");
+  let submit = document.getElementById("submit");
+  
+  submit.onclick = function(){
+    let sum = parseInt(one.value) + parseInt(two.value) + parseInt(three.value) + parseInt(four.value) + parseInt(five.value) + parseInt(six.value) + parseInt(seven.value) + parseInt(eight.value) + parseInt(nine.value);
+    let divisin = sum/3600;
+    alert(`معدلك ${divisin*100} `)
+  }
+</script>
+</html>
